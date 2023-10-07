@@ -1,0 +1,11 @@
+tabela {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+linhaTabela {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+}
