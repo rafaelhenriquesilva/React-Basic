@@ -1,8 +1,11 @@
 function ChildrenPassValueToEvent({childToParent}){
-    const data = "Estes são os dados do componente filho para o componente pai."
+    const data = {
+        nome: 'Rafael',
+        idade: 26
+    }
     return (
         <div>
-            <button primary onClick={() => childToParent(data)}>Clique no filho</button>
+            <button primary="true" onClick={() => childToParent(data)}>Clique no filho</button>
         </div>
     )
 }

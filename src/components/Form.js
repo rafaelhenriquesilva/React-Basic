@@ -19,9 +19,6 @@ let Form = () =>  {
         <>
             <h1>Meu cadastro</h1>
             <form onSubmit={cadastrarUsuario}>
-                {/* <label>Nome: </label>
-                <input type="text" name="name" /> */}
-                <br />
                 <label>Email: </label>
                 <input 
                         type="email"
@@ -37,8 +34,6 @@ let Form = () =>  {
                         onChange={(e) => setPassword(e.target.value)}
                 />
                 <br />
-                {/* <label>Confirmação de Senha: </label>
-                <input type="password" name="password_confirmation" /> */}
                 <br />
                 <button type="submit">Cadastrar</button>
             </form>

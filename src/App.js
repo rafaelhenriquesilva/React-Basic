@@ -5,14 +5,19 @@ import Pessoa from './components/Pessoa';
 import Evento from './components/Evento';
 import Form from './components/Form';
 import Condicional from './components/Condicional';
+import DynamicList from './components/DynamicList';
+
 
 
 
 function App() {
+  const itens = ['React', ' Vue', 'Angular'];
+
   return (
     <div className="App">
-      <h1> Condicional </h1>
-      <Condicional></Condicional>
+      <h1> Renderização de Listas </h1>
+      <DynamicList itens={itens}/>
+      <DynamicList itens={[]}/>
     </div>
   );
 }

@@ -25,7 +25,9 @@ export default function Condicional(){
                 <button type="submit" onClick={enviarEmail}>Enviar Email</button>
                 
             </form>
-
+            {/* 
+                    Se a variavel userEmail possuir valor, aparacerá uma mensagem indicando email e o botão de limpar, que reseta o valor userEmail     
+            */}
             {userEmail && (
                 <div>
                     <p>O email do usuário é: {userEmail}</p>
